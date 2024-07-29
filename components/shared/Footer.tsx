@@ -6,7 +6,7 @@ import config from '../../lib/config';
 export default function Footer() {
   return (
     <footer className='text-center text-sm py-10'>
-      <p>
+{/*       <p>
         Created by{' '}
         <a
           className='font-bold uppercase text-secondary transition-all duration-100 animate-pulse'
@@ -14,7 +14,7 @@ export default function Footer() {
         >
           {config.author}
         </a>
-      </p>
+      </p> */}
     </footer>
   );
 }

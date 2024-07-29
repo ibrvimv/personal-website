@@ -15,8 +15,8 @@ const ibm_plex_mono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: 'ADLET IBRAIMOV',
-  description: 'Adlet Ibraimov is a Web Developer & Content Creator based in Milan, Italy',
+  title: 'Magzhan Serikuly',
+  description: 'Magzhan Serikuly is a Project & Product Manager based in Almaty, Kazakhstan',
 };
 
 export default async function RootLayout({

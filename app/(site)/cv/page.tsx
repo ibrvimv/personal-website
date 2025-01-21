@@ -12,6 +12,9 @@ export default async function CV() {
 
   return (
     <div className='px-3 overflow-y-auto'>
+      <div>
+        <h1 className='font-bold mb-2 pb-3'>CV</h1>
+      </div>
       <div className='my-5 animate-bounce delay-2 translate-y-[-25%]'>
         <Button icon={VisibilityIcon} text='VIEW CV' value='https://rxresu.me/ibrvimv/frontend' />
       </div>

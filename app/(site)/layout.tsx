@@ -34,7 +34,7 @@ export default async function RootLayout({
         )}
       >
         <div>
-          <Header />
+          {/* <Header /> */}
           <main>{children}</main>
         </div>
         <Footer />

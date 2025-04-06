@@ -20,7 +20,7 @@ export default async function Projects() {
             key={key}
             target='_blank'
             href={item?.url}
-            className='flex flex-col items-center gap-4 hover:opacity-50 transition-opacity duration-100 flex-1 min-w-[300px] max-w-[calc(33%-1.5rem)]'
+            className='flex flex-col items-center gap-4 hover:-translate-x-1 hover:-translate-y-5 hover:text-secondary p-2 transition-all duration-100 flex-1 min-w-[300px] max-w-[calc(33%-1.5rem)]'
           >
             <div className='w-full aspect-video relative'>
               <Image

@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className='text-center text-sm py-10'>
 {/*       <p>
         Created by{' '}
-        <a
+        <a target='_blank' rel='author'
           className='font-bold uppercase text-secondary transition-all duration-100 animate-pulse'
           href={config.authorUrl}
         >

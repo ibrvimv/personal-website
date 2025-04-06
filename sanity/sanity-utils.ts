@@ -12,6 +12,8 @@ export async function getAbout(): Promise<About> {
       image{
         alt,
         asset->{
+          _type,
+          _ref,
           url,
           metadata{
             lqip
@@ -41,6 +43,8 @@ export async function getProjects(): Promise<Project[]> {
       name,
       image{
         asset->{
+          _type,
+          _ref,
           url,
           metadata{
             lqip

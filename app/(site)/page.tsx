@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { getAbout } from '@/sanity/sanity-utils';
 import { PortableText } from '@portabletext/react';
+import { urlForImage } from '@/sanity/lib/image';
 
 export default async function Home() {
   const data = await getAbout();
@@ -32,13 +33,14 @@ export default async function Home() {
       <div className='md:w-1/2  md:h-auto max-md:aspect-square  relative max-md:order-1'>
         <div
           className='absolute inset-0 z-30  '
-          style={{ boxShadow: '0 0 7px 7px #121212 inset' }}
+          style={{ boxShadow: '0 0 7px 7px #fff inset' }}
         ></div>
         <Image
           className='object-cover'
-          src={data.image?.asset?.url}
+          src={urlForImage(data.image)}
           alt={data.image?.alt}
           fill={true}
+          loading='eager'
           placeholder='blur'
           blurDataURL={data.image?.asset?.metadata?.lqip}
         />

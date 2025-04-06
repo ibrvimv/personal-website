@@ -5,14 +5,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#121212',
-        third: '#B787F5',
-        secondary: '#1691ae',
+        // primary: '#121212',
+        primary: '#494953',
+        third: '#FF5656',
+        // secondary: '#1691ae',
+        secondary: '#6A7EFC',
+        back: "#FFFFFF"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      animation: {
+        bounce: 'bounce 1s infinite',
       },
     },
   },

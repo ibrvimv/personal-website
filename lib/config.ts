@@ -1,11 +1,11 @@
 const config = {
   siteName: 'Magzhan Serikuly',
-  siteDescription:
-    'Personal website of Magzhan Serikuly',
+  siteDescript: 'Personal website of Magzhan Serikuly',
   siteUrl: 'https://lvniakea.vercel.app/',
   instagram: 'https://instagram.com/ivluence',
+
   author: 'Adlet Ibraimov',
-  authorUrl: 'https://www.instagram.com/ivluence',
+  authorUrl: 'https://www.instagram.com/iv.branding',
   nav: [
     {
       name: 'ABOUT ME',

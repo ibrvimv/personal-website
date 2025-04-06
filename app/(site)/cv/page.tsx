@@ -1,6 +1,9 @@
 import React from 'react';
 import { getCV } from '@/sanity/sanity-utils';
 import { PortableText } from '@portabletext/react';
+import Button from '@/components/Button';
+import DownloadIcon from '@mui/icons-material/Download';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 export default async function CV() {
   const data = await getCV();
@@ -9,6 +12,12 @@ export default async function CV() {
 
   return (
     <div className='px-3 overflow-y-auto'>
+      {/* <div className='my-5 animate-bounce delay-2 translate-y-[-25%]'>
+        <Button icon={VisibilityIcon} text='VIEW CV' value='https://drive.google.com/file/d/1AZ5M1GGgkHbp2nW2T-VDkuPtij3yvTsM/view?usp=sharing' />
+      </div> */}
+      <div className='my-5 mb-10'>
+        <Button icon={DownloadIcon} text='DOWNLOAD CV' value='https://drive.google.com/file/d/1lf8vp2dhk1xSCQN_wFW8mSRz0Cb7gu43/view?usp=sharing' />
+      </div>
       {data.map((item, key) => {
         return (
           <div key={key}>

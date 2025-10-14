@@ -11,6 +11,8 @@ export async function getAbout(): Promise<About> {
       name,
       image{
         alt,
+        hotspot,
+        crop,
         asset->{
           _type,
           _ref,

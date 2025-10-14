@@ -9,7 +9,11 @@ const config: Config = {
         primary: '#494953',
         third: '#FF5656',
         // secondary: '#1691ae',
-        secondary: 'red',
+        // secondary: '#f54242',
+        // secondary: '#3589e8',
+        secondary: '#336296',
+        // secondary: '#191919',
+        // secondary: '#FF5656',
         back: "#FFFFFF"
       },
       backgroundImage: {

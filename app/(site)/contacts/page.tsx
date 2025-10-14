@@ -28,7 +28,7 @@ export default async function Contacts() {
   if (!data) return <div>No contacts founded</div>;
 
   return (
-    <div className='px-3 flex flex-col gap-4 py-16'>
+    <div className='px-3 flex flex-col gap-4 py-24'>
       <div>
         <h1 className='font-bold mb-2 pb-3'>CONTACTS</h1>
       </div>

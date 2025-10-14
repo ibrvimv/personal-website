@@ -11,7 +11,7 @@ export default async function CV() {
   if (!data) return <div>{`Sorry CV is not avaiable now:(`}</div>;
 
   return (
-    <div className='px-3 overflow-y-auto py-16'>
+    <div className='px-3 overflow-y-auto py-24'>
       {/* <div className='my-5 animate-bounce delay-2 translate-y-[-25%]'>
         <Button icon={VisibilityIcon} text='VIEW CV' value='https://drive.google.com/file/d/1AZ5M1GGgkHbp2nW2T-VDkuPtij3yvTsM/view?usp=sharing' />
       </div> */}

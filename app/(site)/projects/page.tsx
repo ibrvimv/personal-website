@@ -10,7 +10,7 @@ export default async function Projects() {
     return <div>Sorry, for unknown reason projects could not be loaded.</div>;
 
   return (
-    <div className='px-3 py-16'>
+    <div className='px-3 py-24'>
       <div className='flex flex-col'>
         <h1 className='font-bold mb-2'>PROJECTS</h1>
       </div>

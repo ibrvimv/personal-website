@@ -26,7 +26,7 @@ export default async function Home() {
             <PortableText value={data.subtitle} />
           </div>
         </div>
-        <div className='text-justify'>
+        <div className='text-justify '>
           <PortableText value={data.description} />
         </div>
       </div>

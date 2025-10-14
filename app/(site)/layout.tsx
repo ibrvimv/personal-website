@@ -5,14 +5,18 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import Header from '../../components/shared/Header';
 import Footer from '../../components/shared/Footer';
 
-import { IBM_Plex_Mono } from 'next/font/google';
+import { IBM_Plex_Mono, Montserrat, Roboto, Inter, Quicksand, Outfit } from 'next/font/google';
 
 import clsx from 'clsx';
 
-const ibm_plex_mono = IBM_Plex_Mono({
+const ibm_plex_mono = Outfit({
   weight: ['400', '700'],
-  subsets: ['latin', 'cyrillic'],
+  subsets: ['latin'],
 });
+// const ibm_plex_mono = IBM_Plex_Mono({
+//   weight: ['400', '700'],
+//   subsets: ['latin', 'cyrillic'],
+// });
 
 export const metadata = {
   title: 'ADLET IBRAIMOV',

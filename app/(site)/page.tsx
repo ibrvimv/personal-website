@@ -37,7 +37,7 @@ export default async function Home() {
         ></div>
         <Image
           className='object-cover'
-          src={urlForImage(data.image).fit('crop').width(800).height(800).url()}
+          src={urlForImage(data.image).fit('crop').width(1500).height(1500).url()}
           alt={data.image?.alt}
           fill={true}
           loading='eager'

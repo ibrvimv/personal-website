@@ -16,7 +16,7 @@ export default async function CV() {
         <Button icon={VisibilityIcon} text='VIEW CV' value='https://drive.google.com/file/d/1AZ5M1GGgkHbp2nW2T-VDkuPtij3yvTsM/view?usp=sharing' />
       </div> */}
       <div className='my-5 mb-10'>
-        <Button icon={DownloadIcon} text='DOWNLOAD CV' value='https://drive.google.com/file/d/1lf8vp2dhk1xSCQN_wFW8mSRz0Cb7gu43/view?usp=sharing' />
+        <Button icon={DownloadIcon} text='DOWNLOAD CV' value='https://drive.google.com/file/d/1Q8HtepZj1xrRP6sxaqiV57-xTpB1Ne3v/view?usp=sharing' />
       </div>
       {data.map((item, key) => {
         return (

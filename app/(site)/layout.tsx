@@ -30,7 +30,7 @@ export default async function RootLayout({
       <body
         className={clsx(
           ibm_plex_mono.className,
-          'max-w-7xl m-auto flex flex-col justify-between flex-grow h-screen'
+          ' m-auto flex flex-col justify-between flex-grow h-screen'
         )}
       >
         <div>

@@ -4,9 +4,9 @@ const config = {
     'Personal website of Adlet Ibraimov, Content creator, Frontend developer and music producer',
   siteUrl: 'https://adlet-ibraimov.vercel.app',
   githubUrl: 'https://github.com/ibrvimv',
-  instagram: 'https://instagram.com/iv.branding',
+  instagram: 'https://instagram.com/ivluence',
   author: 'Adlet Ibraimov',
-  authorUrl: 'https://www.instagram.com/iv.branding',
+  authorUrl: 'https://www.instagram.com/ivluence',
   nav: [
     {
       name: 'ABOUT ME',

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       disallow: ''
     },
-    sitemap: 'https://adlet-ibraimov.vercel.app/sitemap.xml',
+    sitemap: 'https://adletibraimov.cv/sitemap.xml',
   }
 }

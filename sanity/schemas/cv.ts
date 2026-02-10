@@ -20,6 +20,15 @@ export default defineType({
       type: 'array',
       of: [{ type: 'block' }],
     }),
+    defineField({
+      name: 'cvFile',
+      title: 'CV PDF File',
+      type: 'file',
+      options: {
+        accept: 'application/pdf',
+      },
+      description: 'Загрузи сюда PDF с резюме напрямую в Sanity.',
+    }),
     orderRankField({ type: 'cv' }),
   ],
   orderings: [orderRankOrdering as any],

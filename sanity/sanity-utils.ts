@@ -32,7 +32,8 @@ export async function getAbout(): Promise<About> {
 export async function getCV(): Promise<CV[]> {
   return client.fetch(
     groq`*[_type=='cv']|order(orderRank){
-      ...
+      ...,
+      "cvFileUrl": cvFile.asset->url
     } `,
     {},
     { cache: 'no-store' }

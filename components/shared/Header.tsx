@@ -10,11 +10,11 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className='text-center sm:text-left pt-5 pb-5 px-0 md:px-5 fixed top-0 left-0 right-0 z-50 flex md:justify-center justify-normal backdrop-blur-sm backdrop-invert-0  bg-secondary/10'>
-      <nav className='flex flex-row md:gap-4'>
+    <header className='text-center sm:text-left   fixed top-0 left-0 right-0 z-50 flex md:justify-center justify-normal backdrop-blur-sm backdrop-invert-0  bg-secondary/10 mix-blend-luminosity'>
+      <nav className='flex flex-row md:gap-4 mix-blend-luminosity bg-[#deb887] w-full  justify-center py-5' >
         {config.nav.map((item, index) => (
           <Link
-            className={`text-base px-3 py-2 hover:text-secondary transition-colors duration-100 ${pathname === item.path ? 'text-secondary' : 'text-white'
+            className={`text-base lg:text-3xl  px-3 py-2 hover:text-secondary transition-colors duration-100 ${pathname === item.path ? 'text-secondary' : 'text-white'
               }`}
             key={index}
             href={{ pathname: item.path }}

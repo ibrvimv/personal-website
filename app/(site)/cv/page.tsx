@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { getCV } from '@/sanity/sanity-utils';
+import { urlForCvMobileImage } from '@/sanity/lib/image';
 import Button from '@/components/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 
@@ -11,7 +12,10 @@ export default async function CV() {
 
   const first = data[0];
   const pdfUrl = first?.cvFileUrl;
-  const mobileImageUrl = first?.cvMobileImage?.asset?.url;
+  const mobileImage = first?.cvMobileImage;
+  const mobileImageUrl = mobileImage
+    ? urlForCvMobileImage(mobileImage as Parameters<typeof urlForCvMobileImage>[0]).url()
+    : null;
 
   if (!pdfUrl) {
     return (
@@ -42,6 +46,7 @@ export default async function CV() {
             width={1240}
             height={1754}
             className='w-full h-auto'
+            unoptimized
             priority
           />
         </div>

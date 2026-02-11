@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { getCV } from '@/sanity/sanity-utils';
 import Button from '@/components/Button';
 import DownloadIcon from '@mui/icons-material/Download';
@@ -10,6 +11,7 @@ export default async function CV() {
 
   const first = data[0];
   const pdfUrl = first?.cvFileUrl;
+  const mobileImageUrl = first?.cvMobileImage?.asset?.url;
 
   if (!pdfUrl) {
     return (
@@ -31,10 +33,24 @@ export default async function CV() {
       <div className='my-5 mb-10'>
         <Button icon={DownloadIcon} text='DOWNLOAD CV' value={pdfUrl} />
       </div>
-      <div className='w-full h-[100vh] md:h-[200vh] bg-white'>
+      {/* Mobile: show long PNG/JPG version from Sanity for better scrolling/zoom UX */}
+      {mobileImageUrl && (
+        <div className='md:hidden w-full bg-white rounded-md overflow-hidden'>
+          <Image
+            src={mobileImageUrl}
+            alt='Curriculum Vitae'
+            width={1240}
+            height={1754}
+            className='w-full h-auto'
+            priority
+          />
+        </div>
+      )}
+      {/* Tablet / Desktop: embedded PDF viewer */}
+      <div className='hidden md:block w-full h-[120vh] bg-white'>
         <iframe
           src={`${pdfUrl}#toolbar=0&navpanes=0&scrollbar=0`}
-          className='lg:w-4/5 w-full md:rounded-md h-full mx-auto  '
+          className='lg:w-4/5 w-full md:rounded-md h-full mx-auto'
           loading='lazy'
         />
       </div>

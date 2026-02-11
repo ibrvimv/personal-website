@@ -21,13 +21,23 @@ export default defineType({
       of: [{ type: 'block' }],
     }),
     defineField({
+      name: 'cvMobileImage',
+      title: 'CV Mobile Image',
+      type: 'image',
+      description:
+        'CV version for mobile in the form of a long picture (PNG/JPG). Used on phones instead of PDF iframe.',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'cvFile',
       title: 'CV PDF File',
       type: 'file',
       options: {
         accept: 'application/pdf',
       },
-      description: 'Загрузи сюда PDF с резюме напрямую в Sanity.',
+      description: 'Upload PDF file here.',
     }),
     orderRankField({ type: 'cv' }),
   ],

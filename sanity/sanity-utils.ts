@@ -33,7 +33,14 @@ export async function getCV(): Promise<CV[]> {
   return client.fetch(
     groq`*[_type=='cv']|order(orderRank){
       ...,
-      "cvFileUrl": cvFile.asset->url
+      "cvFileUrl": cvFile.asset->url,
+      cvMobileImage{
+        asset->{
+          _type,
+          _ref,
+          url
+        }
+      }
     } `,
     {},
     { cache: 'no-store' }
